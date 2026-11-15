@@ -1,5 +1,7 @@
 # Chiến dịch 6 màn — Xu, gợi ý và thời gian
 
+**Cập nhật Three.js:** cả 16 game và 96 màn đã chuyển sang tương tác vật thể bằng Three.js. Nội dung về DOM/Canvas 2D hoặc các bản chơi chữ ở phần mô tả cũ bên dưới là lịch sử thiết kế, không còn là cơ chế chạy hiện tại. Xem [kiến trúc và phạm vi Three.js](THREEJS.md).
+
 16 game × 6 màn = **96 màn chơi**. Từ trang chọn game mở chế độ chiến dịch. Hai bản Three.js gốc vẫn có tại first-shift.html và idea-b/index.html; trong màn chọn có liên kết “Chơi bản Three.js gốc”. Chế độ nhiều màn của A/B dùng lại dữ liệu nhiệm vụ/nguồn của bản gốc, được trình bày bằng DOM/SVG 2D. Bản gốc không tự thêm xu hoặc đồng hồ.
 
 ## Luật chung

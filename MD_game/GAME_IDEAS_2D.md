@@ -1,5 +1,7 @@
 # Các ý tưởng game 2D — Mông Dương
 
+**Cập nhật Three.js:** cả 16 game và 96 màn đã chuyển sang tương tác vật thể bằng Three.js. Nội dung về DOM/Canvas 2D hoặc các bản chơi chữ ở phần mô tả cũ bên dưới là lịch sử thiết kế, không còn là cơ chế chạy hiện tại. Xem [kiến trúc và phạm vi Three.js](THREEJS.md).
+
 12 ý tưởng mới (E–P), bổ sung cho A–D. Các thiết kế E–P và C/D đã có bản chơi thử; cả bộ có 16 game chơi được. Đáp án chưa được duyệt theo quy trình hiện hành. Tài liệu này giữ thiết kế ban đầu; phạm vi thực tế xem [Các game đã triển khai](IMPLEMENTED_GAMES.md). Trang chọn game đọc cùng dữ liệu từ `catalog.js`; thay đổi bản thiết kế cần cập nhật tệp dữ liệu và tài liệu này.
 
 ## Căn cứ và giới hạn chung
