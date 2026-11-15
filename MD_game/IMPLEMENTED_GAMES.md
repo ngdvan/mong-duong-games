@@ -1,6 +1,6 @@
 # Các game đã triển khai
 
-**Cập nhật Three.js:** cả 16 game và 96 màn đã chuyển sang tương tác vật thể bằng Three.js. Nội dung về DOM/Canvas 2D hoặc các bản chơi chữ ở phần mô tả cũ bên dưới là lịch sử thiết kế, không còn là cơ chế chạy hiện tại. Xem [kiến trúc và phạm vi Three.js](THREEJS.md).
+**Cập nhật 2D dùng Three.js:** cả 16 game và 96 màn đã chuyển sang tương tác hình phẳng bằng Three.js. Nội dung về DOM/Canvas 2D hoặc các bản chơi chữ ở phần mô tả cũ bên dưới là lịch sử thiết kế, không còn là cơ chế chạy hiện tại. Xem [kiến trúc và phạm vi Three.js](THREEJS.md).
 
 **Cập nhật:** cả 16 game hiện có chế độ 6 màn, xu và cửa hàng gợi ý; xem [luật và phạm vi hiện tại](CAMPAIGN.md). Bảng dưới đây ghi vòng chơi của bản đầu, trước khi tăng màn. Các bản Three.js gốc vẫn truy cập riêng.
 
