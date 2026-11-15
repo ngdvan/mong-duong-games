@@ -1,10 +1,10 @@
-import {games,sources,selectGames} from './catalog.js?v=art-1';
+import {games,sources,selectGames} from './catalog.js?v=player-1';
 import {readResults,readCampaign} from './games/storage.js';
 const $=s=>document.querySelector(s);let status='all',returnFocus=null;
 const escape=s=>s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function illustration(type,index){
  const bg=['#dbe6d7','#d7e4e2','#eee1c6','#d9e4eb'][index%4],ink='#254d60',gold='#edbd61';
- const img=(file,x,y,w,h)=>`<image href="assets/${file}?v=art-1" x="${x}" y="${y}" width="${w}" height="${h}" preserveAspectRatio="none"/>`;
+ const img=(file,x,y,w,h)=>`<image href="assets/${file}?v=player-1" x="${x}" y="${y}" width="${w}" height="${h}" preserveAspectRatio="none"/>`;
  const icon=(kind,x,y,size=50)=>img(`safety-icons/${kind}.svg`,x,y,size,size);
  const worker=(x,y,s=1)=>`<g transform="translate(${x} ${y}) scale(${s})">${img('kenney/worker-idle.png',-48,-34,96,128)}${img('safety-icons/helmet.svg',-35,-15,70,50)}</g>`;
  const card=(x,y,kind,angle=0)=>`<g transform="translate(${x} ${y}) rotate(${angle})"><rect x="-31" y="-44" width="62" height="88" rx="9" fill="${ink}" stroke="${gold}" stroke-width="2"/><rect x="-25" y="-36" width="50" height="72" rx="5" fill="#f7f0d9"/>${icon(kind,-24,-25,48)}<path d="M-15 29h30" stroke="#a2b8a6" stroke-width="3"/></g>`;

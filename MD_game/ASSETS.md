@@ -12,7 +12,7 @@ Kenney's direct download host returned 403 in this environment, so the original 
 
 `assets/safety-icons/` contains project-authored vector illustrations. `games/shared/artwork.js` composes loaded artwork into flat textures. These are learning illustrations, not validated equipment specifications or official safety signage. Buildings and courtyard layouts are fictional.
 
-Phaser uses a cached worker pose atlas and native walking animations; the collision box remains the same size. Three.js uses the same illustrations as camera-facing sprites. All surfaces remain planar, with no 3D/isometric projection, 3D lighting or cast shadows. Offscreen Canvas creates textures only; the playable scenes still use the engine's WebGL renderer.
+Phaser uses a cached worker pose atlas and native walking animations; the collision box remains the same size. All sixteen games use Phaser for the playable scenes. Legacy Three.js code is not shipped. All surfaces remain planar, with no 3D/isometric projection, 3D lighting or cast shadows. Offscreen Canvas creates textures only; the playable scenes still use the engine's WebGL renderer.
 
 Images load before a scene mounts; failures stop the level without an answer-list fallback or coin award. Levels, missions, source references and storage keys are unchanged. The credits page is accessible from the library and game footers.
 

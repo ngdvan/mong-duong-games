@@ -1,5 +1,7 @@
 # Các game đã triển khai
 
+**Hiện tại:** cả 16 game / 96 màn dùng Phaser 2D và khung chơi vừa viewport. Điều khiển, thông báo, tiếp tục/thử lại nằm trong cùng khung; có toàn màn hình và cỡ hình miễn phí. Xem [PLAYER.md](PLAYER.md), [PHASER.md](PHASER.md). Các mô tả cũ phía dưới là lịch sử thiết kế.
+
 **Phaser update:** the three top-down games (`first-shift`, `mentor`, `locker-walk`) and platformer (`platform`) now use Phaser. The other twelve games remain 2D with Three.js. See [PHASER.md](PHASER.md). The engine descriptions below document the preceding Three.js implementation.
 
 **Cập nhật 2D dùng Three.js:** cả 16 game và 96 màn đã chuyển sang tương tác hình phẳng bằng Three.js. Nội dung về DOM/Canvas 2D hoặc các bản chơi chữ ở phần mô tả cũ bên dưới là lịch sử thiết kế, không còn là cơ chế chạy hiện tại. Xem [kiến trúc và phạm vi Three.js](THREEJS.md).
