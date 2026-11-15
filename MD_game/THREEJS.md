@@ -1,5 +1,7 @@
 # Game 2D dùng Three.js cho toàn bộ 16 game
 
+**Phaser update:** the three top-down games (`first-shift`, `mentor`, `locker-walk`) and platformer (`platform`) now use Phaser. The other twelve games remain 2D with Three.js. See [PHASER.md](PHASER.md). The engine descriptions below document the preceding Three.js implementation.
+
 Toàn bộ 96 màn hiện dùng một cảnh 2D do WebGL/Three.js hiển thị. Các trang cũ `first-shift.html` và `idea-b/index.html` chuyển tới chiến dịch Three.js; không còn mở bản trắc nghiệm chữ. Các module DOM/Canvas 2D cũ vẫn được giữ trong mã phát triển để tham khảo, nhưng không được import hoặc xuất bản trong bản game mới.
 
 Three.js chỉ là bộ hiển thị và xử lý tương tác. Tất cả game phải là 2D: sprite/hình phẳng, camera trực giao vuông góc, không phối cảnh/isometric, không mesh khối nổi, không đổ bóng 3D. Bản trước dùng mô hình khối và camera nghiêng là sai yêu cầu; đã thay bằng hình minh họa phẳng.
