@@ -1,5 +1,5 @@
-import {World,T,box,cyl,ball,model,building,worker,token} from './world.js?v=flat-2d-1';
-import {cases,questionActions,actionNames} from './plan.js?v=flat-2d-1';
+import {World,T,box,cyl,ball,model,building,worker,token} from './world.js?v=art-1';
+import {cases,questionActions,actionNames} from './plan.js?v=art-1';
 import {topics} from '../../idea-b/content.js';
 import {refs} from '../content.js';
 import {sameSet} from '../model.js';

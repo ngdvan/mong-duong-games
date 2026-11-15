@@ -1,5 +1,6 @@
+import {tokenArtwork,trayArtwork,sceneArtwork} from '../shared/artwork.js?v=art-1';
 import * as T from '../../vendor/three.module.min.js';
-import {box,ball,cyl,model,worker,building} from './models.js?v=flat-2d-1';
+import {box,ball,cyl,model,worker,building} from './models.js?v=art-1';
 export {T,box,ball,cyl,model,worker,building};
 function disposeTree(root){const geometries=new Set(),materials=new Set(),textures=new Set();root.traverse(o=>{if(o.geometry)geometries.add(o.geometry);for(const m of o.material?(Array.isArray(o.material)?o.material:[o.material]):[]){materials.add(m);if(m.map)textures.add(m.map);}});textures.forEach(t=>t.dispose());materials.forEach(m=>m.dispose());geometries.forEach(g=>g.dispose());}
 export class World {
@@ -10,7 +11,7 @@ export class World {
   this.access=c.el('div',undefined,'world-access');this.access.style.cssText='position:absolute;inset:0;pointer-events:none';this.host.append(this.access);this.caption=c.el('div','Chạm đồ vật để tương tác','world-caption');this.caption.style.cssText='position:absolute;left:12px;right:12px;bottom:10px;pointer-events:none;background:#fff9dfeb;color:#294c3b;border-radius:8px;padding:8px 12px;font-size:12px';this.caption.setAttribute('aria-live','polite');this.host.append(this.caption);
   this.scene=new T.Scene();this.scene.background=new T.Color(0xb7cdc1);this.camera=new T.OrthographicCamera(-7,7,6,-6,.1,150);// A perpendicular orthographic view: X/Z for maps, X/Y for platformers.
   if(side){this.camera.position.set(0,2,100);this.camera.lookAt(0,2,0);}else{this.camera.up.set(0,0,-1);this.camera.position.set(0,100,0);this.camera.lookAt(0,0,0);}
-  this.host.dataset.dimension='2d';this.environment=new T.Group();this.scene.add(this.environment);if(!side)box(this.environment,span+4,.01,14,0xa8bea4,0,-1);
+  this.host.dataset.dimension='2d';this.environment=new T.Group();this.scene.add(this.environment);if(!side){const ground=box(this.environment,span+4,.01,16.6,0xffffff,0,-1);const texture=new T.CanvasTexture(sceneArtwork());texture.colorSpace=T.SRGBColorSpace;ground.material.map?.dispose();ground.material.map=texture;}
   this.root=new T.Group();this.scene.add(this.root);this.ray=new T.Raycaster();this.plane=new T.Plane(new T.Vector3(0,side?0:1,side?1:0),0);this.ndc=new T.Vector2();this.point=new T.Vector3();this.ring=new T.Mesh(new T.RingGeometry(.62,.72,32),new T.MeshBasicMaterial({color:0xf7d275,side:T.DoubleSide,depthTest:false}));if(!side)this.ring.rotation.x=-Math.PI/2;this.ring.visible=false;this.scene.add(this.ring);
   this.down=e=>{if(c.paused())return;this.start={x:e.clientX,y:e.clientY};const entity=this.hit(e);this.dragged=entity?.draggable?entity:null;this.moved=false;if(this.dragged)this.renderer.domElement.setPointerCapture?.(e.pointerId);};
   this.move=e=>{if(!this.dragged||!this.start||c.paused())return;if(Math.hypot(e.clientX-this.start.x,e.clientY-this.start.y)>7){this.moved=true;const p=this.ground(e);if(p){this.dragged.object.position.x=p.x;this.dragged.object.position.z=p.z;this.dragged.object.position.y=.65;this.sync();}}};
@@ -34,5 +35,6 @@ export class World {
  render(){if(this.disposed)return;this.sync();this.renderer.render(this.scene,this.camera);}
  dispose(){if(this.disposed&&this.cleaned)return;this.cleaned=true;this.disposed=true;cancelAnimationFrame(this.frame);this.observer.disconnect();disposeTree(this.scene);this.renderer.dispose();this.renderer.forceContextLoss();this.host.remove();}
 }
-export function token(kind,color=0x467363){const p=new T.Group(),canvas=document.createElement('canvas');canvas.width=canvas.height=128;const c=canvas.getContext('2d');c.fillStyle='#'+color.toString(16).padStart(6,'0');c.beginPath();c.arc(64,64,60,0,Math.PI*2);c.fill();const tex=new T.CanvasTexture(canvas);tex.colorSpace=T.SRGBColorSpace;const badge=new T.Sprite(new T.SpriteMaterial({map:tex,transparent:true,depthTest:false,depthWrite:false}));badge.scale.set(1.8,1.8,1);p.add(badge);const icon=model(kind);icon.scale.setScalar(.9);p.add(icon);return p;}
-export function tray(kind){const p=new T.Group();box(p,1.8,.01,1.6,0x658675,0,.08);box(p,1.8,.01,.1,0x426856,0,.1,-.8);for(const x of [-.85,.85])box(p,.1,.01,1.6,0x426856,x,.1);const icon=model(kind);icon.scale.setScalar(.65);p.add(icon);return p;}
+function flatCard(canvas,width,height){const texture=new T.CanvasTexture(canvas);texture.colorSpace=T.SRGBColorSpace;const sprite=new T.Sprite(new T.SpriteMaterial({map:texture,transparent:true,depthTest:false,depthWrite:false}));sprite.scale.set(width,height,1);const p=new T.Group();p.add(sprite);return p;}
+export function token(kind,color=0x467363){return flatCard(tokenArtwork(kind,color),1.8,1.8);}
+export function tray(kind){return flatCard(trayArtwork(kind),1.8,1.6);}

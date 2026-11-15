@@ -1,0 +1,202 @@
+{
+  "version": 1,
+  "retrieved": "2026-11-15",
+  "license": "CC0-1.0",
+  "packs": [
+    {
+      "title": "Platformer Pack Industrial",
+      "author": "Kenney Vleugels (Kenney.nl)",
+      "license": "CC0-1.0",
+      "source": "https://kenney.nl/assets/platformer-pack-industrial",
+      "download": "https://opengameart.org/sites/default/files/kenney_platformerPack_industrial.zip",
+      "page": "https://opengameart.org/content/platformer-pack-industrial-100",
+      "archiveSha256": "ce65c6d8e75db8c1a22037ca99370772fd16bf463d4e016453825639c83bec29",
+      "files": [
+        {
+          "file": "industrial-029.png",
+          "original": "PNG/Default size/platformIndustrial_029.png",
+          "sha256": "cc6363f07ee0358fbdc59ed3cb75152a86e77ad046f2c0d98b1e0406f3b81a22"
+        },
+        {
+          "file": "industrial-030.png",
+          "original": "PNG/Default size/platformIndustrial_030.png",
+          "sha256": "b1a71342e2529f74d17c0c85f60159186d75b0f50eaec128b6779cd27252e0eb"
+        },
+        {
+          "file": "industrial-032.png",
+          "original": "PNG/Default size/platformIndustrial_032.png",
+          "sha256": "14fb475aae216bde1428d695b436338de98e203852f5d1d16bceca968d4fb82b"
+        },
+        {
+          "file": "industrial-043.png",
+          "original": "PNG/Default size/platformIndustrial_043.png",
+          "sha256": "dd28383e54d22c09f11792e545f7b85d0f8e1aa81fd89906a2850fc10d82e30f"
+        },
+        {
+          "file": "industrial-044.png",
+          "original": "PNG/Default size/platformIndustrial_044.png",
+          "sha256": "217be5adef6d8ac71161ca776acee959e679f9f888a945bc64fab5924abeacd7"
+        },
+        {
+          "file": "industrial-057.png",
+          "original": "PNG/Default size/platformIndustrial_057.png",
+          "sha256": "4afad701e98261c2497c10f7a6c47b2e1d56beeca3fe8cca28a922b324da8105"
+        },
+        {
+          "file": "industrial-058.png",
+          "original": "PNG/Default size/platformIndustrial_058.png",
+          "sha256": "5c4547de37b23bbe158d5d5af78e6ba69b18d50d2eeffa2e4ebeeac29582e0c9"
+        },
+        {
+          "file": "industrial-070.png",
+          "original": "PNG/Default size/platformIndustrial_070.png",
+          "sha256": "0510df7063c7c0f615b7ee8ab6ec25c0694205788d4bff2c69876dc96802b3be"
+        },
+        {
+          "file": "industrial-071.png",
+          "original": "PNG/Default size/platformIndustrial_071.png",
+          "sha256": "368345f326049de60d27dca41345623e51aaa946e04685b56115c712032dfa0c"
+        },
+        {
+          "file": "industrial-073.png",
+          "original": "PNG/Default size/platformIndustrial_073.png",
+          "sha256": "66ec1faca7cc3e25b88ef5bb6e7556752c26f738df222861cfa84f98cb5080a3"
+        },
+        {
+          "file": "industrial-074.png",
+          "original": "PNG/Default size/platformIndustrial_074.png",
+          "sha256": "ab4468ad6103139e5e22c2853ceb90d91ed11d06d0732138c563a9035b67476e"
+        },
+        {
+          "file": "industrial-085.png",
+          "original": "PNG/Default size/platformIndustrial_085.png",
+          "sha256": "ee4279f62664ec8d22cbafecda6790cde7eab1bc526110583ac54d1cd67e2e0e"
+        },
+        {
+          "file": "industrial-086.png",
+          "original": "PNG/Default size/platformIndustrial_086.png",
+          "sha256": "3b6784666908dc0c63aba1ff123c51f955942712c5f7cf78bae2bf7b65bfca9e"
+        },
+        {
+          "file": "industrial-095.png",
+          "original": "PNG/Default size/platformIndustrial_095.png",
+          "sha256": "b396109daec8c1287bf6528e2452e6a4232f2fc98713de95b483a5c94b920fe8"
+        }
+      ],
+      "licenseFile": "industrial-LICENSE.txt"
+    },
+    {
+      "title": "RPG pack: base set",
+      "author": "Kenney Vleugels (Kenney.nl)",
+      "license": "CC0-1.0",
+      "source": "https://opengameart.org/content/rpg-pack-base-set",
+      "download": "https://opengameart.org/sites/default/files/KenneyRPGpack.zip",
+      "archiveSha256": "49759ab087fdc28d8357010e0f2a17d1c9db61c8fe9b320da965acdfbc298ef5",
+      "files": [
+        {
+          "file": "rpg-003.png",
+          "original": "PNG/rpgTile003.png",
+          "sha256": "dd5dc80be10caabd5d5081a1d3150da6b822bee194c157b6d04c2c244084a1a2"
+        },
+        {
+          "file": "rpg-015.png",
+          "original": "PNG/rpgTile015.png",
+          "sha256": "e0c4d4b63ff90d80ced0c3f362ca9239698a3a3d672abd39ec5fd1a8e338b05c"
+        },
+        {
+          "file": "rpg-047.png",
+          "original": "PNG/rpgTile047.png",
+          "sha256": "021a3d40eb454702d9f54b13d581eca7e5bcf64103e78f2e14f5d9123656cde0"
+        },
+        {
+          "file": "rpg-091.png",
+          "original": "PNG/rpgTile091.png",
+          "sha256": "97438f32efdd46c1781fb478ad0ffb2ce9c99d7fc639ba1f5b653140ec385166"
+        },
+        {
+          "file": "rpg-156.png",
+          "original": "PNG/rpgTile156.png",
+          "sha256": "75ee728b949515b30fad8fc2bfb6db425b8455e37044b0b186b243b4483bab53"
+        },
+        {
+          "file": "rpg-159.png",
+          "original": "PNG/rpgTile159.png",
+          "sha256": "0e681be40efba1a761b806b8ef4883950aeb636f605386f807817f5226ab57b9"
+        },
+        {
+          "file": "rpg-195.png",
+          "original": "PNG/rpgTile195.png",
+          "sha256": "63f4e05be31d9d2d4e4863c8a71eb40ff4e29c3b67d375ab96962fad9a208939"
+        },
+        {
+          "file": "rpg-199.png",
+          "original": "PNG/rpgTile199.png",
+          "sha256": "095961e64d6d5af93c79628e82b6afa7173d4d2365d06b498bb551c6a6bc362d"
+        }
+      ],
+      "licenseFile": "rpg-LICENSE.txt"
+    },
+    {
+      "title": "Toon Characters 1",
+      "author": "Kenney (www.kenney.nl)",
+      "license": "CC0-1.0",
+      "source": "https://kenney.nl/assets/toon-characters",
+      "page": "https://opengameart.org/content/toon-characters-1",
+      "download": "https://opengameart.org/sites/default/files/kenney_toonCharacters1.zip",
+      "archiveSha256": "54e585338e05bb4662da78a1b19283a3dda1f90dbe527353b65a4bb88b5f6297",
+      "files": [
+        {
+          "file": "worker-idle.png",
+          "original": "Male person/PNG/Poses/character_malePerson_idle.png",
+          "sha256": "61b90a87766befc301de36d1700cdea47261f23d3bc48960f6d560fe88dfe88d"
+        },
+        {
+          "file": "worker-walk0.png",
+          "original": "Male person/PNG/Poses/character_malePerson_walk0.png",
+          "sha256": "ead675e18d83765b32ba7e5b9e5b885ac4df8b4af3c778b9fb7416f5a4016cf5"
+        },
+        {
+          "file": "worker-walk1.png",
+          "original": "Male person/PNG/Poses/character_malePerson_walk1.png",
+          "sha256": "31355273cea6f52710e605ebd3f2e07f148ea023501514bc6d683021431f1327"
+        },
+        {
+          "file": "worker-walk2.png",
+          "original": "Male person/PNG/Poses/character_malePerson_walk2.png",
+          "sha256": "344634da2053540f7f1815a80cc0a26ab2bcb5f10a9db946dd1064e5e030ac92"
+        },
+        {
+          "file": "worker-walk3.png",
+          "original": "Male person/PNG/Poses/character_malePerson_walk3.png",
+          "sha256": "afbc1a81fc8c57ff8ec59d45102d4d1bf9078c4afc9a99c27ca34629ef4e3ada"
+        },
+        {
+          "file": "worker-walk4.png",
+          "original": "Male person/PNG/Poses/character_malePerson_walk4.png",
+          "sha256": "0bbf519df0712a19553038b25cbba83370faa96ae80b5d4d756cd42a57f787a5"
+        },
+        {
+          "file": "worker-walk5.png",
+          "original": "Male person/PNG/Poses/character_malePerson_walk5.png",
+          "sha256": "55a34d0ea3647335557aedb5ee3f5834eb7270b51cd934eb46bdc83e574a0c02"
+        },
+        {
+          "file": "worker-walk6.png",
+          "original": "Male person/PNG/Poses/character_malePerson_walk6.png",
+          "sha256": "ff0a7b98d80d11044be1aad782bb90ce264b681d9af0d58583bbbaae2b1376fa"
+        },
+        {
+          "file": "worker-walk7.png",
+          "original": "Male person/PNG/Poses/character_malePerson_walk7.png",
+          "sha256": "c2d3af2433f15fb87836c65342d87e8ce209f504b91c96c3376186f097379fae"
+        },
+        {
+          "file": "worker-jump.png",
+          "original": "Male person/PNG/Poses/character_malePerson_jump.png",
+          "sha256": "ee72fd87ebb40ee335528c8b4dbcb408684f651f22c451a9528755d463340942"
+        }
+      ],
+      "licenseFile": "toon-LICENSE.txt"
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#214c3c"><title>Trò chơi an toàn · Mông Dương</title><link rel="stylesheet" href="game.css?v=phaser-1"><link rel="stylesheet" href="../shared/navigation.css"><script type="module" src="shell.js?v=phaser-1"></script></head><body>
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#214c3c"><title>Trò chơi an toàn · Mông Dương</title><link rel="stylesheet" href="game.css?v=art-1"><link rel="stylesheet" href="../shared/navigation.css"><script type="module" src="shell.js?v=art-1"></script></head><body>
 <header><a href="../index.html" class="brand">⛏ MÔNG DƯƠNG<small>HỌC AN TOÀN · VỮNG TAY NGHỀ</small></a><button id="source-button">Nguồn bài học</button></header>
 <main><section class="game-heading"><div><p id="genre" class="eyebrow"></p><h1 id="title">Đang mở trò chơi…</h1><p id="description"></p></div><button id="restart">Chơi lại ↻</button></section>
 <div class="hud"><div><span id="progress-text">Chuẩn bị</span><progress id="progress" value="0" max="1" aria-label="Tiến độ bài học"></progress></div><div class="campaign-hud"><strong id="coins">◉ 0 xu</strong><span id="level-label"></span><span id="time-left" role="timer" aria-label="Thời gian còn lại">Chưa bắt đầu</span><button id="pause">Tạm nghỉ</button></div></div>
@@ -6,7 +6,7 @@
 <section id="feedback" class="feedback" aria-live="polite" hidden><strong id="feedback-title"></strong><p id="feedback-text"></p><small id="feedback-source"></small></section>
 <div id="next-area"></div>
 <p class="footnote">Bối cảnh minh họa · Ôn tập theo tài liệu 2017–2020, cần đơn vị đối chiếu hiện hành · Không thay thế huấn luyện thực hành.</p>
-</main>
+<a class="asset-credit" href="../credits.html">Đồ họa &amp; giấy phép</a></main>
 <dialog id="hint-dialog" aria-labelledby="hint-title"><h2 id="hint-title">Gợi ý · 5 xu</h2><p id="hint-message"></p><button id="buy-hint" class="primary">Mua với 5 xu</button><button id="close-hint">Để sau</button></dialog>
 <dialog id="timeout-dialog" aria-labelledby="timeout-title"><h2 id="timeout-title">Hết thời gian màn chơi</h2><p>Chưa mở màn tiếp theo. Không mất xu. Gợi ý đã mua vẫn được giữ khi thử lại. Đây là thời gian trò chơi, không phải thời hạn thực hiện công việc tại mỏ.</p><button id="retry-level" class="primary">Thử lại màn này</button><button id="timeout-lobby">Chọn màn</button></dialog>
 <dialog id="pause-dialog" aria-labelledby="pause-title"><h2 id="pause-title">Đang tạm nghỉ</h2><p>Đồng hồ dừng khi nghỉ. Không có thưởng hoàn thành nhanh.</p><button id="resume" class="primary">Tiếp tục chơi</button></dialog>

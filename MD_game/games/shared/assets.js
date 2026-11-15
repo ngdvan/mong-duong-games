@@ -1,0 +1,5 @@
+// Only the selected, locally hosted CC0 sprites are fetched; see assets/kenney/manifest.json.
+export const assetFiles=[...['029','030','032','043','044','057','058','070','071','073','074','085','086','095'].map(n=>`industrial-${n}`),...['003','015','047','091','156','159','195','199'].map(n=>`rpg-${n}`),'worker-idle',...Array.from({length:8},(_,i)=>`worker-walk${i}`),'worker-jump',...['helmet','lamp','radio','boots','rescue','clothes','clothes-clean'].map(n=>'icon-'+n)];
+const images=new Map();let ready;
+export function loadArt(){return ready??=Promise.all(assetFiles.map(name=>new Promise((resolve,reject)=>{const picture=new Image();picture.onload=()=>{images.set(name,picture);resolve();};picture.onerror=()=>{const error=Error(`Asset unavailable: ${name}`);error.name='AssetLoadError';reject(error);};picture.src=new URL(name.startsWith('icon-')?`../../assets/safety-icons/${name.slice(5)}.svg`:`../../assets/kenney/${name}.png`,import.meta.url).href;}))).catch(error=>{ready=null;throw error;});}
+export function image(name){const picture=images.get(name);if(!picture)throw Object.assign(Error(`Artwork not ready: ${name}`),{name:'AssetLoadError'});return picture;}
