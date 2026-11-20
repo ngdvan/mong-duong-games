@@ -1,6 +1,6 @@
 # Toàn bộ game dùng Phaser 2D
 
-Cả **16 game / 96 màn** dùng Phaser 3.90.0 và WebGL. Không có đường chơi Three.js, game 3D, giao diện chọn đáp án chữ hoặc bản chơi chữ thay thế khi lỗi đồ họa. Mã Three.js cũ chỉ còn trong mã phát triển để tra cứu, không được nạp hoặc xuất bản.
+Cả **20 game / 120 màn** dùng Phaser 3.90.0 và WebGL. Không có đường chơi Three.js, game 3D, giao diện chọn đáp án chữ hoặc bản chơi chữ thay thế khi lỗi đồ họa. Mã Three.js cũ chỉ còn trong mã phát triển để tra cứu, không được nạp hoặc xuất bản.
 
 ## Khung chơi
 

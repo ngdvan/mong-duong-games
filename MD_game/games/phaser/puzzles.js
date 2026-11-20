@@ -1,5 +1,5 @@
-import {World} from './world.js?v=player-1';
-import {stepIcons,endIcons,actionIcons} from '../shared/artwork.js?v=player-1';
+import {World} from './world.js?v=trials-1';
+import {stepIcons,endIcons,actionIcons} from '../shared/artwork.js?v=trials-1';
 import {sequencePlan,missingPlan,sortPlan,deckPlan,evidencePlan} from '../shared/plan.js';
 import {memoryPool,evidenceCards,responseCards,refs} from '../content.js';
 import {shuffled,ordered,swap,sameSet} from '../model.js';

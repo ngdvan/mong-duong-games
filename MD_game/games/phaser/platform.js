@@ -1,6 +1,6 @@
-import {World} from './world.js?v=player-1';
+import {World} from './world.js?v=trials-1';
 import {startSteps,endSteps,refs} from '../content.js';
-import {stepIcons,endIcons} from '../shared/artwork.js?v=player-1';
+import {stepIcons,endIcons} from '../shared/artwork.js?v=trials-1';
 export async function mount(c){
  c.clear();const count=c.config.count,steps=c.config.level>=4&&c.config.level%2===0?endSteps:startSteps,icons=steps===endSteps?endIcons:stepIcons,source=steps===endSteps?refs.end:refs.start;c.total(count);
  const heading=c.el('h2','Bậc thang kiến thức'),instruction=c.el('p','','instruction');c.stage.append(heading,instruction);const w=await World.create(c,{side:true,title:'Platformer 2D · Phaser'}),tools=c.el('div',undefined,'world-tools');c.dock.append(tools);let stage=0,selected=null,input={},hero,saved={x:30/32,y:-1.25},jumpHeld=false;

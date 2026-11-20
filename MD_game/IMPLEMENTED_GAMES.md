@@ -1,3 +1,5 @@
+> Cập nhật: 20 game Phaser 2D / 120 màn. Bốn bản thử theo ý tưởng 1, 2, 5, 6 có trong [TRIALS_1256.md](TRIALS_1256.md); phần dưới giữ mô tả các game đã có.
+
 # Các game đã triển khai
 
 **Hiện tại:** cả 16 game / 96 màn dùng Phaser 2D và khung chơi vừa viewport. Điều khiển, thông báo, tiếp tục/thử lại nằm trong cùng khung; có toàn màn hình và cỡ hình miễn phí. Xem [PLAYER.md](PLAYER.md), [PHASER.md](PHASER.md). Các mô tả cũ phía dưới là lịch sử thiết kế.

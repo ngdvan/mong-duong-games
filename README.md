@@ -1,6 +1,8 @@
-# Mông Dương — 16 game 2D, 96 màn
+# Mông Dương — 20 game 2D, 120 màn
 
-[Chơi trên GitHub Pages](https://ngdvan.github.io/mong-duong-games/MD_game/?v=player-1)
+[Chơi trên GitHub Pages](https://ngdvan.github.io/mong-duong-games/MD_game/?v=trials-1)
+
+Bổ sung bốn bản thử theo ý tưởng 1, 2, 5, 6: Hành trình thợ mỏ an toàn, Trực ban an toàn, Chinh phục đường lò — Mỗi ngày và Đường lò không sai sót. Xem [phạm vi và nguồn](MD_game/TRIALS_1256.md).
 
 Toàn bộ game sử dụng Phaser 3.90.0, đồ họa 2D và hình ảnh CC0 lưu trong dự án. Khung chơi lấp đầy màn hình, các nút và phản hồi nằm cùng khung, có phóng/thu/vừa khung và nút toàn màn hình.
 

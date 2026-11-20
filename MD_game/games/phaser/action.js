@@ -1,4 +1,4 @@
-import {World} from './world.js?v=player-1';
+import {World} from './world.js?v=trials-1';
 import {cases,actionNames} from '../shared/plan.js';
 import {topics} from '../../idea-b/content.js';
 const distractors=['crate','warning','stop','meal','book','helmet','lamp','brush','radio','no-beer','shield','unknown','clothes','paper','worker'];

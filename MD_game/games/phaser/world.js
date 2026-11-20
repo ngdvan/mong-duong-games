@@ -1,4 +1,4 @@
-import {artwork,buildingArtwork,tokenArtwork,trayArtwork,surfaceArtwork,sceneArtwork,platformArtwork,cardArtwork,jigsawArtwork} from '../shared/artwork.js?v=player-1';
+import {artwork,buildingArtwork,tokenArtwork,trayArtwork,surfaceArtwork,sceneArtwork,platformArtwork,cardArtwork,jigsawArtwork} from '../shared/artwork.js?v=trials-1';
 let loading;
 export function loadPhaser(){if(globalThis.Phaser)return Promise.resolve(globalThis.Phaser);return loading??=new Promise((resolve,reject)=>{const script=document.createElement('script');script.src=new URL('../../vendor/phaser.min.js',import.meta.url).href;script.onload=()=>resolve(globalThis.Phaser);script.onerror=()=>{script.remove();loading=null;reject(Error('Cannot load Phaser'));};document.head.append(script);});}
 export class World{

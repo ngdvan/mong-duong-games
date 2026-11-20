@@ -1,10 +1,10 @@
-import {games,sources,selectGames} from './catalog.js?v=player-1';
+import {games,sources,selectGames} from './catalog.js?v=trials-1';
 import {readResults,readCampaign} from './games/storage.js';
 const $=s=>document.querySelector(s);let status='all',returnFocus=null;
 const escape=s=>s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function illustration(type,index){
  const bg=['#dbe6d7','#d7e4e2','#eee1c6','#d9e4eb'][index%4],ink='#254d60',gold='#edbd61';
- const img=(file,x,y,w,h)=>`<image href="assets/${file}?v=player-1" x="${x}" y="${y}" width="${w}" height="${h}" preserveAspectRatio="none"/>`;
+ const img=(file,x,y,w,h)=>`<image href="assets/${file}?v=trials-1" x="${x}" y="${y}" width="${w}" height="${h}" preserveAspectRatio="none"/>`;
  const icon=(kind,x,y,size=50)=>img(`safety-icons/${kind}.svg`,x,y,size,size);
  const worker=(x,y,s=1)=>`<g transform="translate(${x} ${y}) scale(${s})">${img('kenney/worker-idle.png',-48,-34,96,128)}${img('safety-icons/helmet.svg',-35,-15,70,50)}</g>`;
  const card=(x,y,kind,angle=0)=>`<g transform="translate(${x} ${y}) rotate(${angle})"><rect x="-31" y="-44" width="62" height="88" rx="9" fill="${ink}" stroke="${gold}" stroke-width="2"/><rect x="-25" y="-36" width="50" height="72" rx="5" fill="#f7f0d9"/>${icon(kind,-24,-25,48)}<path d="M-15 29h30" stroke="#a2b8a6" stroke-width="3"/></g>`;
@@ -36,10 +36,10 @@ function openIdea(){const id=new URLSearchParams(location.hash.slice(1)).get('id
  returnFocus=document.activeElement;$('#detail-kicker').textContent=`THIẾT KẾ · ${g.genre.toUpperCase()} · ${g.minutes} PHÚT`;
  $('#detail-title').textContent=g.title;$('#detail-summary').textContent=g.summary;$('#detail-content').innerHTML='';
  for(const [label,value] of [['Mục tiêu học tập',g.objective],['Vòng chơi đề xuất',g.loop],['Điều khiển trên điện thoại',g.controls],['Đánh giá & sửa sai',g.scoring],['Ví dụ một lượt',g.example],['Phạm vi bản đầu',g.scope],['Thông tin cần bổ sung',g.gaps]]){const section=document.createElement('section'),h=document.createElement('h3'),p=document.createElement('p');h.textContent=label;p.textContent=value;section.append(h,p);$('#detail-content').append(section);}
- const refs=document.createElement('section');refs.innerHTML='<h3>Căn cứ nội dung</h3>';for(const [key,section] of g.references){const p=document.createElement('p'),a=document.createElement('a');a.href=sources[key].href;a.textContent=`${key} — ${sources[key].title}`;p.append(a,document.createTextNode(`. ${section}.`));refs.append(p);}const note=document.createElement('p');note.className='review-note';note.textContent='Chế độ chơi hiện tại là game 2D dùng Phaser hoặc Three.js theo thể loại; phạm vi bản đầu trong thiết kế là định hướng. Nội dung chưa duyệt theo quy trình hiện hành. Mục tiêu lấy từ tài liệu; cơ chế, ví dụ hư cấu và thời lượng là đề xuất. Không thay thế huấn luyện thực hành.';refs.append(note);$('#detail-content').append(refs);if(!$('#detail').open)$('#detail').showModal();$('#detail').scrollTop=0;
+ const refs=document.createElement('section');refs.innerHTML='<h3>Căn cứ nội dung</h3>';for(const [key,section] of g.references){const p=document.createElement('p'),a=document.createElement('a');a.href=sources[key].href;a.textContent=`${key} — ${sources[key].title}`;p.append(a,document.createTextNode(`. ${section}.`));refs.append(p);}const note=document.createElement('p');note.className='review-note';note.textContent='Chế độ chơi hiện tại là game 2D dùng Phaser 2D; phạm vi bản đầu trong thiết kế là định hướng. Nội dung chưa duyệt theo quy trình hiện hành. Mục tiêu lấy từ tài liệu; cơ chế, ví dụ hư cấu và thời lượng là đề xuất. Không thay thế huấn luyện thực hành.';refs.append(note);$('#detail-content').append(refs);if(!$('#detail').open)$('#detail').showModal();$('#detail').scrollTop=0;
 }
 for(const genre of [...new Set(games.map(g=>g.genre))]){const o=document.createElement('option');o.value=genre;o.textContent=genre;$('#genre').append(o);}
-$('#totals').textContent=`${games.filter(g=>g.status==='playable').length} game chơi được · ${games.filter(g=>g.implementation).length} game mở rộng · 96 màn`;
+$('#totals').textContent=`${games.filter(g=>g.status==='playable').length} game chơi được · ${games.filter(g=>g.implementation).length} game mở rộng · ${games.length*6} màn`;
 for(const s of ['all','playable','new'])$(`#${s}-count`).textContent=s==='all'?games.length:selectGames({status:s}).length;
 $('#filters').onsubmit=e=>e.preventDefault();$('#search').oninput=draw;$('#genre').onchange=draw;document.querySelectorAll('[data-status]').forEach(b=>b.onclick=()=>{status=b.dataset.status;draw();});
 $('#reset').onclick=()=>{status='all';$('#search').value='';$('#genre').value='all';draw();$('#search').focus();};

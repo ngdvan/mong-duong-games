@@ -1,4 +1,4 @@
-import {games} from '../catalog.js?v=player-1';
+import {games} from '../catalog.js?v=trials-1';
 const root=new URL('../',import.meta.url),current=document.body.dataset.game;
 const nav=document.createElement('nav');nav.className='collection-nav';nav.setAttribute('aria-label','Điều hướng bộ trò chơi');
 const home=document.createElement('a');home.href=new URL('index.html',root);home.textContent='← Bộ trò chơi';nav.append(home);

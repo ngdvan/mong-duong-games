@@ -1,4 +1,4 @@
-import {image} from './assets.js?v=player-1';
+import {image} from './assets.js?v=trials-1';
 // Shared flat illustrations; no engine imports or gameplay rendering here.
 const palette={green:'#315d50',yellow:'#f4c968',skin:'#d9ac81',navy:'#29495b',paper:'#fff4d0'};
 const css=c=>typeof c==='number'?'#'+c.toString(16).padStart(6,'0'):c;

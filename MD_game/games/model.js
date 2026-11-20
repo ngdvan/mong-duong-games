@@ -5,7 +5,7 @@ export function swap(values,a,b){const result=[...values];if(a>=0&&b>=0&&a<resul
 export function newSession(){return {done:new Set(),errors:new Map()};}
 export function record(session,key,correct,theme){if(session.done.has(key))return false;if(!correct){session.errors.set(key,theme);return false;}session.done.add(key);return true;}
 export const ready=(session,total)=>session.done.size===total;
-export const registeredIds=['mentor','report','platform','sequence','memory','response-cards','locker-walk','tidy','board','sort','comic','jigsaw','missing','evidence','first-shift','sharp-eyes'];
+export const registeredIds=['mentor','report','platform','sequence','memory','response-cards','locker-walk','tidy','board','sort','comic','jigsaw','missing','evidence','first-shift','sharp-eyes','safe-journey','safety-dispatch','daily-mine','zero-mistake'];
 export function stepPlatform(p,input,dt,platforms){
  const next={...p};dt=Math.max(0,Math.min(dt,.035));next.vx=(input.right?1:0)-(input.left?1:0);next.vx*=210;
  if(input.jump&&next.grounded){next.vy=-430;next.grounded=false;}

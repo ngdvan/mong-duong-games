@@ -1,4 +1,4 @@
-import {World} from './world.js?v=player-1';
+import {World} from './world.js?v=trials-1';
 import {pathAround} from '../shared/path.js';
 import {shiftPlan,missionIcon} from '../shared/plan.js';
 import {missions,stations,freshState,perform} from '../../missions.js';
